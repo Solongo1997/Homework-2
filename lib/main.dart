@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 void main() {                              //Sorrry, i really dont know what i'm doing. Can't understand dart and flutter/
-                                           //then i just copy and paste2.
+                                           //then i just copy and paste2.And i only can finish image and add 
+                                                             //  assets:
+                                                // - images/a57b453e288946f6ff8c324e60396e9a.jpg in pupspec in yaml
   runApp(const MyApp());
 }
 
