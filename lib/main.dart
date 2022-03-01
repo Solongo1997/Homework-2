@@ -22,7 +22,7 @@ Widget build(BuildContext context){
          ),
           ListTile(
            title: Text('ul hodloh'),
-           subtitle: Text('20000zar') ,
+           subtitle: Text('20000zar'),
            leading: Icon(Icons.home),
          ),
           ListTile(
