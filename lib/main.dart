@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  final myList = ['buuuuuz', 'Khuushuur', 'medkue'];
-  print(myList);
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -17,106 +15,390 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class Homepage extends StatelessWidget {
+class Homepage extends StatefulWidget {
   const Homepage({Key? key}) : super(key: key);
 
   @override
-  Widget build(BuildContext context) {
-    final Countries = [
-      'Albania',
-      'Andorra',
-      'Armenia',
-      'Austria',
-      'Azerbaijan',
-      'Belarus',
-      'Belgium',
-      'Bosnia and Herzegovina',
-      'Bulgaria',
-      'Croatia',
-      'Cyprus',
-      'Czech Republic',
-      'Denmark',
-      'Estonia',
-      'Finland',
-      'France',
-      'Georgia',
-      'Germany',
-      'Greece',
-      'Hungary',
-      'Iceland',
-      'Ireland',
-      'Italy',
-      'Kazakhstan',
-      'Kosovo',
-      'Latvia',
-      'Liechtenstein',
-      'Lithuania',
-      'Luxembourg',
-      'Macedonia',
-      'Malta',
-      'Moldova',
-      'Monaco',
-      'Montenegro',
-      'Netherlands',
-      'Norway',
-      'Poland',
-      'Portugal',
-      'Romania',
-      'Russia',
-      'San Marino',
-      'Serbia',
-      'Slovakia',
-      'Slovenia',
-      'Spain',
-      'Sweden',
-      'Switzerland',
-      'Turkey',
-      'Ukraine',
-      'United Kingdom',
-      'Vatican City'
-    ];
+  State<Homepage> createState() => _HomepageState();
+}
 
+class _HomepageState extends State<Homepage> {
+  @override
+  Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: Text('My list'),
-        ),
-        body: ListView(
-          children: [
-            Card(
-              elevation: 20,
-              child: ListTile(
-                  leading: Icon(Icons.wb_sunny),
-                  title: Text('Sunny'),
-                  subtitle: Text('hot hoooot'),
-                  trailing: Icon(Icons.keyboard_arrow_right),
-                  onTap: () {
-                    print('sunny');
-                  }),
-            ),
-            Card(
-              elevation: 20,
-              child: ListTile(
-                  leading: Icon(Icons.brightness_1),
-                  title: Text('Moon'),
-                  subtitle: Text('hot hoooot'),
-                  trailing: Icon(Icons.keyboard_arrow_right),
-                  onTap: () {
-                    print('moon');
-                  }),
-            ),
-            Card(
-              elevation: 20,
-              child: ListTile(
-                leading: Icon(Icons.star),
-                title: Text('Star'),
-                subtitle: Text('hot hoooot'),
-                trailing: Icon(Icons.keyboard_arrow_right),
-                onTap: () {
-                  print('star');
-                },
+      appBar: AppBar(
+        title: Text('Japanese dictionary'),
+      ),
+      body: Column(
+        children: [
+          Container(
+            margin: EdgeInsets.only(top: 10),
+            padding: const EdgeInsets.symmetric(vertical: 4, horizontal: 20),
+            decoration: BoxDecoration(
+              color: Colors.black38.withAlpha(10),
+              borderRadius: BorderRadius.all(
+                Radius.circular(20),
               ),
             ),
-          ],
-        ));
+            child: Row(
+              children: <Widget>[
+                Expanded(
+                  child: TextField(
+                    decoration: InputDecoration(
+                      hintText: "Search",
+                      hintStyle: TextStyle(
+                        color: Colors.black.withAlpha(120),
+                      ),
+                      border: InputBorder.none,
+                    ),
+                    onChanged: (String keyword) {},
+                  ),
+                ),
+                Icon(
+                  Icons.search,
+                  color: Colors.black.withAlpha(120),
+                )
+              ],
+            ),
+          ),
+          Expanded(
+            child: ListView(
+              children: [
+                Card(
+                  elevation: 20,
+                  child: ListTile(
+                    title: Text('あ'),
+                    subtitle: Text('a'),
+                    trailing: Icon(Icons.keyboard_arrow_right),
+                    onTap: () {
+                      print('a');
+                    },
+                  ),
+                ),
+                Card(
+                  elevation: 20,
+                  child: ListTile(
+                    title: Text('あ'),
+                    subtitle: Text('a'),
+                    trailing: Icon(Icons.keyboard_arrow_right),
+                    onTap: () {
+                      print('a');
+                    },
+                  ),
+                ),
+                Card(
+                  elevation: 20,
+                  child: ListTile(
+                    title: Text('あ'),
+                    subtitle: Text('a'),
+                    trailing: Icon(Icons.keyboard_arrow_right),
+                    onTap: () {
+                      print('a');
+                    },
+                  ),
+                ),
+                Card(
+                  elevation: 20,
+                  child: ListTile(
+                    title: Text('あ'),
+                    subtitle: Text('a'),
+                    trailing: Icon(Icons.keyboard_arrow_right),
+                    onTap: () {
+                      print('a');
+                    },
+                  ),
+                ),
+                Card(
+                  elevation: 20,
+                  child: ListTile(
+                    title: Text('あ'),
+                    subtitle: Text('a'),
+                    trailing: Icon(Icons.keyboard_arrow_right),
+                    onTap: () {
+                      print('a');
+                    },
+                  ),
+                ),
+                Card(
+                  elevation: 20,
+                  child: ListTile(
+                    title: Text('あ'),
+                    subtitle: Text('a'),
+                    trailing: Icon(Icons.keyboard_arrow_right),
+                    onTap: () {
+                      print('a');
+                    },
+                  ),
+                ),
+                Card(
+                  elevation: 20,
+                  child: ListTile(
+                    title: Text('あ'),
+                    subtitle: Text('a'),
+                    trailing: Icon(Icons.keyboard_arrow_right),
+                    onTap: () {
+                      print('a');
+                    },
+                  ),
+                ),
+                Card(
+                  elevation: 20,
+                  child: ListTile(
+                    title: Text('あ'),
+                    subtitle: Text('a'),
+                    trailing: Icon(Icons.keyboard_arrow_right),
+                    onTap: () {
+                      print('a');
+                    },
+                  ),
+                ),
+                Card(
+                  elevation: 20,
+                  child: ListTile(
+                    title: Text('あ'),
+                    subtitle: Text('a'),
+                    trailing: Icon(Icons.keyboard_arrow_right),
+                    onTap: () {
+                      print('a');
+                    },
+                  ),
+                ),
+                Card(
+                  elevation: 20,
+                  child: ListTile(
+                    title: Text('あ'),
+                    subtitle: Text('a'),
+                    trailing: Icon(Icons.keyboard_arrow_right),
+                    onTap: () {
+                      print('a');
+                    },
+                  ),
+                ),
+                Card(
+                  elevation: 20,
+                  child: ListTile(
+                    title: Text('あ'),
+                    subtitle: Text('a'),
+                    trailing: Icon(Icons.keyboard_arrow_right),
+                    onTap: () {
+                      print('a');
+                    },
+                  ),
+                ),
+                Card(
+                  elevation: 20,
+                  child: ListTile(
+                    title: Text('あ'),
+                    subtitle: Text('a'),
+                    trailing: Icon(Icons.keyboard_arrow_right),
+                    onTap: () {
+                      print('a');
+                    },
+                  ),
+                ),
+                Card(
+                  elevation: 20,
+                  child: ListTile(
+                    title: Text('あ'),
+                    subtitle: Text('a'),
+                    trailing: Icon(Icons.keyboard_arrow_right),
+                    onTap: () {
+                      print('a');
+                    },
+                  ),
+                ),
+                Card(
+                  elevation: 20,
+                  child: ListTile(
+                    title: Text('あ'),
+                    subtitle: Text('a'),
+                    trailing: Icon(Icons.keyboard_arrow_right),
+                    onTap: () {
+                      print('a');
+                    },
+                  ),
+                ),
+                Card(
+                  elevation: 20,
+                  child: ListTile(
+                    title: Text('あ'),
+                    subtitle: Text('a'),
+                    trailing: Icon(Icons.keyboard_arrow_right),
+                    onTap: () {
+                      print('a');
+                    },
+                  ),
+                ),
+                Card(
+                  elevation: 20,
+                  child: ListTile(
+                    title: Text('あ'),
+                    subtitle: Text('a'),
+                    trailing: Icon(Icons.keyboard_arrow_right),
+                    onTap: () {
+                      print('a');
+                    },
+                  ),
+                ),
+                Card(
+                  elevation: 20,
+                  child: ListTile(
+                    title: Text('あ'),
+                    subtitle: Text('a'),
+                    trailing: Icon(Icons.keyboard_arrow_right),
+                    onTap: () {
+                      print('a');
+                    },
+                  ),
+                ),
+                Card(
+                  elevation: 20,
+                  child: ListTile(
+                    title: Text('あ'),
+                    subtitle: Text('a'),
+                    trailing: Icon(Icons.keyboard_arrow_right),
+                    onTap: () {
+                      print('a');
+                    },
+                  ),
+                ),
+                Card(
+                  elevation: 20,
+                  child: ListTile(
+                    title: Text('あ'),
+                    subtitle: Text('a'),
+                    trailing: Icon(Icons.keyboard_arrow_right),
+                    onTap: () {
+                      print('a');
+                    },
+                  ),
+                ),
+                Card(
+                  elevation: 20,
+                  child: ListTile(
+                    title: Text('あ'),
+                    subtitle: Text('a'),
+                    trailing: Icon(Icons.keyboard_arrow_right),
+                    onTap: () {
+                      print('a');
+                    },
+                  ),
+                ),
+                Card(
+                  elevation: 20,
+                  child: ListTile(
+                    title: Text('あ'),
+                    subtitle: Text('a'),
+                    trailing: Icon(Icons.keyboard_arrow_right),
+                    onTap: () {
+                      print('a');
+                    },
+                  ),
+                ),
+                Card(
+                  elevation: 20,
+                  child: ListTile(
+                    title: Text('あ'),
+                    subtitle: Text('a'),
+                    trailing: Icon(Icons.keyboard_arrow_right),
+                    onTap: () {
+                      print('a');
+                    },
+                  ),
+                ),
+                Card(
+                  elevation: 20,
+                  child: ListTile(
+                    title: Text('あ'),
+                    subtitle: Text('a'),
+                    trailing: Icon(Icons.keyboard_arrow_right),
+                    onTap: () {
+                      print('a');
+                    },
+                  ),
+                ),
+                Card(
+                  elevation: 20,
+                  child: ListTile(
+                    title: Text('あ'),
+                    subtitle: Text('a'),
+                    trailing: Icon(Icons.keyboard_arrow_right),
+                    onTap: () {
+                      print('a');
+                    },
+                  ),
+                ),
+                Card(
+                  elevation: 20,
+                  child: ListTile(
+                    title: Text('あ'),
+                    subtitle: Text('a'),
+                    trailing: Icon(Icons.keyboard_arrow_right),
+                    onTap: () {
+                      print('a');
+                    },
+                  ),
+                ),
+                Card(
+                  elevation: 20,
+                  child: ListTile(
+                    title: Text('あ'),
+                    subtitle: Text('a'),
+                    trailing: Icon(Icons.keyboard_arrow_right),
+                    onTap: () {
+                      print('a');
+                    },
+                  ),
+                ),
+                Card(
+                  elevation: 20,
+                  child: ListTile(
+                    title: Text('あ'),
+                    subtitle: Text('a'),
+                    trailing: Icon(Icons.keyboard_arrow_right),
+                    onTap: () {
+                      print('a');
+                    },
+                  ),
+                ),
+                Card(
+                  elevation: 20,
+                  child: ListTile(
+                    title: Text('あ'),
+                    subtitle: Text('a'),
+                    trailing: Icon(Icons.keyboard_arrow_right),
+                    onTap: () {
+                      print('a');
+                    },
+                  ),
+                ),
+                Card(
+                  elevation: 20,
+                  child: ListTile(
+                    title: Text('あ'),
+                    subtitle: Text('a'),
+                    trailing: Icon(Icons.keyboard_arrow_right),
+                    onTap: () {
+                      print('a');
+                    },
+                  ),
+                ),
+                Card(
+                  elevation: 20,
+                  child: ListTile(
+                    title: Text('あ'),
+                    subtitle: Text('a'),
+                    trailing: Icon(Icons.keyboard_arrow_right),
+                    onTap: () {
+                      print('a');
+                    },
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
   }
 }
